@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>挺哥 | AI Agent 布道者</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <header class="relative h-screen">
+        <div class="absolute inset-0">
+            <img src="https://picsum.photos/1920/1080?random=1" alt="Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">挺哥</h1>
+            <p class="text-xl md:text-2xl mb-8">AI Agent 布道者 · 数字游民 · 开源社区主理人</p>
+            <div class="flex space-x-4">
+                <a href="#about" class="bg-white text-gray-900 px-6 py-3 rounded-full hover:bg-gray-100 transition">了解更多</a>
+                <a href="#contact" class="border-2 border-white px-6 py-3 rounded-full hover:bg-white hover:text-gray-900 transition">联系我</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">关于我</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://picsum.photos/800/600?random=2" alt="Profile" class="rounded-lg shadow-xl">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">效率革命推动者</h3>
+                    <p class="text-gray-600 mb-6">
+                        现AI智能体培训讲师（3000+学员认证）<br>
+                        独立产品经理<br>
+                        Agent 101开源社区主理人<br>
+                        AI编程蓝皮书共创作者 / Coze社区核心开发者
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-gray-900">
+                            <i class="fab fa-weixin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">
+                            <i class="fas fa-book text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">作品展示</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://picsum.photos/600/400?random=3" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">挺哥学AI-AI辅助决策工具</h3>
+                        <p class="text-gray-600">AI智能助手，助力效率提升</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://picsum.photos/600/400?random=4" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">《xxx》书籍</h3>
+                        <p class="text-gray-600">出版中</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://picsum.photos/600/400?random=5" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">独立产品</h3>
+                        <p class="text-gray-600">使用AI不写一行代码，实现产品商业化</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">联系方式</h2>
+            <div class="max-w-2xl mx-auto text-center">
+                <div class="flex justify-center space-x-8 mb-8">
+                    <div class="text-center">
+                        <i class="fab fa-weixin text-4xl text-gray-600 mb-2"></i>
+                        <p class="text-gray-600">微信号：xxx</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-comment text-4xl text-gray-600 mb-2"></i>
+                        <p class="text-gray-600">公众号/视频号：xxx</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 挺哥. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
